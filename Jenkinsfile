@@ -1,9 +1,5 @@
 pipeline {
     agent any
-    tools {
-        dockerTool 'MYDOCKER'
-    }
-
     stages {
         stage('Version') {
             steps {
