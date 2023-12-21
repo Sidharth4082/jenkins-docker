@@ -3,13 +3,13 @@ pipeline {
     stages {
         stage('Version') {
             steps {
-                sh 'docker --version'
+                bat 'docker --version'
             }
         }
      
         stage('Build') {
             steps {
-                sh 'docker build -t kodekloud:v1 .'
+                bat 'docker build -t kodekloud:v1 .'
             }
         }
     }
